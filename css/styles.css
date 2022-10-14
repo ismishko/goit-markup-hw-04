@@ -203,12 +203,12 @@ ul {
 .contact-nav .link-contact:focus {
   color: var(--logo-and-hover);
 }
-
-.contact-icon {
-  stroke: currentColor;
+.icon-contact {
+  fill: currentColor;
 }
-.contact-icon:hover {
-  stroke: var(--logo-and-hover);
+.icon-contact:hover,
+.icon-contact:focus {
+  fill: var(--logo-and-hover);
 }
 .social-list {
   display: flex;
@@ -217,7 +217,7 @@ ul {
   gap: 10px;
 }
 .network {
-    fill: #AFB1B8;
+  fill: #afb1b8;
 }
 /*Наші переваги*/
 .feature-list {
@@ -293,37 +293,31 @@ ul {
 }
 .team-text {
   margin-top: 0;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
-.social-links {
-  display: inline-flex;
-  flex-direction: row;
+.team-social-links{
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 0;
-  margin-top: 16px;
 }
 .icon-href {
   display: flex;
-    align-items: center;
+  align-items: center;
   justify-content: center;
-  border-color: var(--button-no-active);
   width: 44px;
   height: 44px;
-  fill: var(--social-links);
+  fill: currentColor;
 }
-.icon-href:focus {
-  display: flex;
-  align-content: center;
-  justify-content: center;
+.icon-href:hover {
   background-color: var(--logo-and-hover);
-background-size: 100%;
-fill: var(--social-links);
-border-radius: 50px;
+  background-size: 100%;
+  border-radius: 50px;
+}
+.icon-href:hover {
+  fill: var(--background-color);
 }
 img {
   display: block;
