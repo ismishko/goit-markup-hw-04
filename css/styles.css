@@ -341,7 +341,7 @@ img {
   border: 1px solid var(--social-links);
   border-radius: 4px;
 }
-.clients-list{
+.clients-list {
   gap: 30px;
 }
 .clients-link {
